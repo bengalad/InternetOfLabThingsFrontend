@@ -1,0 +1,49 @@
+body {
+    margin:0;
+}
+/* Style the header */
+.header {
+    background-color:beige;
+    margin: 0;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+    display:block;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    width: fit-content;
+    background-color:beige;
+    color: black;
+    /*border: 1px solid #555;*/
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li{
+    text-align: center;
+    /*border-bottom: 1px solid black;*/
+}
+
+li a{
+    display: block;
+    color:black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li:last-child{
+    border-bottom:none;
+}
+
+li a.active{
+    background-color:green;
+    color:white;
+}
+
+ li a:hover:not(.active){
+    background-color:bisque;
+}
