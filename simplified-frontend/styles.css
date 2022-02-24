@@ -1,21 +1,68 @@
 body {
-    margin:0;
-}
-/* Style the header */
-.header {
-    background-color:beige;
-    margin: 0;
-    padding: 8px;
+    margin:0; /*Fills to edges of screen*/
 }
 
-ul {
+header {
+    width:100%;
+    position: fixed;
+}
+
+/*style of logo*/
+header .box{
+    float:left;
+    width:60px;
+    height:auto;
+    margin-right:10px;
+    margin-top: 10px;
+}
+
+/* Style the header */
+header h1.header {
+    background-color:#5689A0;
+    margin: 0;
+    padding: 6px;
+    width: 100%;
+}
+
+header h2.header2{
+    background-color:purple;
+    padding: 2px;
+}
+
+header section{
+    position:fixed;
+    right: 0;
+    margin-top: 6px;
+    display:inline-flex;
+    vertical-align:top;
+}
+
+header .material-icons{
+    font-size: 32px;
+}
+
+header p{
+    color:black;
+    line-height:2px;
+}
+
+
+h2 {
+    text-align: end;
+    padding-right: 10px;
+    margin: 0;
+    padding: 0px;
+    size: 200px;
+}
+
+nav ul{
     list-style-type: none;
     display:block;
     margin: 0;
-    margin-left: 0;
+    margin-top: 53.6px;
     padding: 0;
     width: fit-content;
-    background-color:beige;
+    background-color:#5689A0;
     color: black;
     /*border: 1px solid #555;*/
     height: 100%; /* Full height */
@@ -23,27 +70,44 @@ ul {
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
-li{
+nav ul li{
     text-align: center;
     /*border-bottom: 1px solid black;*/
 }
 
-li a{
+nav ul li a{
     display: block;
     color:black;
     padding: 8px 16px;
     text-decoration: none;
 }
 
-li:last-child{
-    border-bottom:none;
-}
-
-li a.active{
-    background-color:green;
+nav ul li a.current{
+    background-color:rgb(140, 30, 173);
     color:white;
 }
 
- li a:hover:not(.active){
-    background-color:bisque;
+ nav ul li a:hover:not(.current){
+    background-color:rgb(11, 137, 187);
 }
+
+div{
+    display:grid; 
+}
+
+table, th, td{
+    text-align:left;
+    width: 75%;
+    margin-left: 140px;
+    background-color: red;
+    margin-top: 60px;
+    
+}
+
+/*
+div table{
+    text-align: end;
+    display: inline-block;
+    width: 100%;
+}
+*/
