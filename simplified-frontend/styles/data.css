@@ -1,3 +1,11 @@
+.wrapper .column .rowCard i{
+    justify-self: right;
+}
+
+.wrapper .column .rowCard p,h3{
+    margin: 5px;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: repeat(3, 300px);
@@ -43,10 +51,10 @@
     .wrapper { grid-template-columns: repeat(2, 375px); }
   }
   
-  /* Screen larger than 900px? 3 columns */
-  @media (min-width: 900px) {
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
     .wrapper { grid-template-columns: repeat(3, 375px); }
-  }
+ }
 
   /* Style the counter cards */
 .rowCard {
