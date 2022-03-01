@@ -1,0 +1,74 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    /* repeat(auto-fill,minmax(120px, 1fr)*/
+    -ms-grid-row-align: center;
+    grid-gap: 0.7em;
+    grid-auto-rows: minmax(50px,auto);
+    position: relative; 
+    transform: translate(140px,60px);
+    margin: 0 -5px;
+    /*display: flex;*/
+}
+
+/* Clear floats after the columns */
+.wrapper:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Float four columns side by side */
+.column{
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: grid;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 400px) {
+    .wrapper { grid-template-columns: repeat(1, 3750px); }
+  }
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .wrapper { grid-template-columns: repeat(2, 375px); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .wrapper { grid-template-columns: repeat(3, 375px); }
+  }
+
+  /* Style the counter cards */
+.rowCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 325px;
+    border-color: #5689A0;
+    border-style:solid;
+    border-radius: 10px;
+}
+
+/*
+
+.wrapper div{
+    background-color: grey;
+    padding: 1em;
+}
+
+.wrapper div:nth-child(odd){
+    background-color: gainsboro;
+}
+
+*/
