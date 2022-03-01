@@ -5,6 +5,8 @@ body {
 header {
     width:100%;
     position: fixed;
+    background:inherit;
+    z-index:5;
 }
 
 /*style of logo*/
@@ -27,6 +29,7 @@ header h1.header {
 header h2.header2{
     background-color:purple;
     padding: 2px;
+    margin: 0px;
 }
 
 header section{
@@ -46,20 +49,11 @@ header p{
     line-height:2px;
 }
 
-
-h2 {
-    text-align: end;
-    padding-right: 10px;
-    margin: 0;
-    padding: 0px;
-    size: 200px;
-}
-
 nav ul{
     list-style-type: none;
     display:block;
     margin: 0;
-    margin-top: 53.6px;
+    margin-top: 53px;
     padding: 0;
     width: fit-content;
     background-color:#5689A0;
@@ -68,6 +62,7 @@ nav ul{
     height: 100%; /* Full height */
     position: fixed; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    z-index: 5;
 }
 
 nav ul li{
@@ -95,19 +90,152 @@ div{
     display:grid; 
 }
 
+/*
 table, th, td{
     text-align:left;
     width: 75%;
     margin-left: 140px;
     background-color: red;
-    margin-top: 60px;
+    margin-top: 60px; 
+}
+*/
+
+.table1 {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 75%;
+    max-width: 75%;
+    white-space: nowrap;
+    background-color: white;
+    margin-left: 140px;
+
+    margin-top: 60px; 
+}
+
+.table1 td, .table1 th {
+    text-align: center;
+    padding: 8px;
+}
+
+.table1 td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.table1 thead th {
+    color: #ffffff;
+    background: rgb(11, 137, 187);
+}
+
+
+.table1 thead th:nth-child(odd) {
+    color: #ffffff;
+    background:rgb(140, 30, 173);
+}
+
+.table1 tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.graphWrap{
+    display:grid;
+    grid-template-columns: 75% 25%;
+}
+
+div.chartBox canvas{
+    margin-left: 100px;
+    padding: 50px;
+    width: 1px;
+    height: 1px;
+    float: left;
+}
+
+div.graphWrap .options{
+    width: 300px;
+    height: 450px;
+    margin-top: 55px;
+    border-radius: 1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+div.graphWrap .options p{
+    z-index: 1;
+    font-size:large;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    /* repeat(auto-fill,minmax(120px, 1fr)*/
+    -ms-grid-row-align: center;
+    grid-gap: 0.7em;
+    grid-auto-rows: minmax(50px,auto);
+    position: relative; 
+    transform: translate(140px,60px);
+    margin: 0 -5px;
+    /*display: flex;*/
     
 }
 
-/*
-div table{
-    text-align: end;
-    display: inline-block;
-    width: 100%;
+/* Clear floats after the columns */
+.wrapper:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Float four columns side by side */
+.column{
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: grid;
+        margin-bottom: 20px;
+    }
 }
+
+@media (min-width: 400px) {
+    .wrapper { grid-template-columns: repeat(1, 3750px); }
+  }
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .wrapper { grid-template-columns: repeat(2, 375px); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .wrapper { grid-template-columns: repeat(3, 375px); }
+  }
+
+  /* Style the counter cards */
+.rowCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 325px;
+}
+
+/*
+
+.wrapper div{
+    background-color: grey;
+    padding: 1em;
+}
+
+.wrapper div:nth-child(odd){
+    background-color: gainsboro;
+}
+
 */
