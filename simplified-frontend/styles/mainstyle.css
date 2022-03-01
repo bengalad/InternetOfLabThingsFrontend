@@ -1,0 +1,95 @@
+body {
+    margin:0; /*Fills to edges of screen*/
+}
+
+header {
+    width:100%;
+    position: fixed;
+    background:inherit;
+    z-index:5;
+}
+
+/*style of logo*/
+header .box{
+    float:left;
+    width:60px;
+    height:auto;
+    margin-right:10px;
+    margin-top: 10px;
+}
+
+/* Style the header */
+header h1.header {
+    background-color:#5689A0;
+    margin: 0;
+    padding: 6px;
+    width: 100%;
+}
+
+header h2.header2{
+    background-color:purple;
+    padding: 2px;
+    margin: 0px;
+}
+
+header section{
+    position:fixed;
+    right: 0;
+    margin-top: 6px;
+    display:inline-flex;
+    vertical-align:top;
+}
+
+header .material-icons{
+    font-size: 32px;
+}
+
+header p{
+    color:black;
+    line-height:2px;
+}
+
+nav ul{
+    list-style-type: none;
+    display:block;
+    margin: 0;
+    margin-top: 53px;
+    padding: 0;
+    width: fit-content;
+    background-color:#5689A0;
+    color: black;
+    /*border: 1px solid #555;*/
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    z-index: 5;
+}
+
+nav ul li{
+    text-align: center;
+    /*border-bottom: 1px solid black;*/
+}
+
+nav ul li a{
+    display: block;
+    color:black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+nav ul li a.current{
+    background-color:rgb(140, 30, 173);
+    color:white;
+}
+
+ nav ul li a:hover:not(.current){
+    background-color:rgb(11, 137, 187);
+}
+
+div{
+    display:grid; 
+}
+
+
+
+
