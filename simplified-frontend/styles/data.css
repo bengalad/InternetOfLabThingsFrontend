@@ -1,5 +1,11 @@
-.wrapper .column .rowCard i{
-    justify-self: right;
+.wrapper .column .rowCard .refresh{
+    display: block;
+    text-align: right;
+   
+}
+
+.wrapper .column .rowCard h3{
+    text-align: center;
 }
 
 .wrapper .column .rowCard p,h3{
@@ -57,10 +63,10 @@
  }
 
   /* Style the counter cards */
-.rowCard {
+.wrapper .column .rowCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
-    text-align: center;
+
     background-color: #f1f1f1;
     width: 325px;
     border-color: #5689A0;

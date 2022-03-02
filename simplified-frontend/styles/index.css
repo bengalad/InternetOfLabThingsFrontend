@@ -15,11 +15,9 @@ table, th, td{
     border: none;
     border-collapse: collapse;
     width: 75%;
-    max-width: 75%;
     white-space: nowrap;
     background-color: white;
     margin-left: 140px;
-
     margin-top: 60px; 
 }
 
@@ -46,4 +44,77 @@ table, th, td{
 
 .table1 tr:nth-child(even) {
     background: #F8F8F8;
+}
+
+.settings{
+    margin-left: 140px;
+    margin-top: 60px; 
+    border-style: solid;
+    border-color:rgb(11, 137, 187);
+    border-width:2px;
+    border-radius: 5px;
+    width: 75%;
+}
+.settings h2{
+    border-bottom:solid;
+    border-bottom-color:rgb(11, 137, 187);
+    border-width:2px;
+    margin: 0px;
+}
+
+.settings .tab{
+    display:inline-block;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color:rgb(11, 137, 187);
+    
+}
+.settings .tab button{
+    display:block;
+    float:left;
+}
+
+.settings .tab button.active{
+    background-color:rgb(140, 30, 173);
+}
+
+.settings .tabContent{
+    margin-top: 10px;
+}
+
+.settings .tabContent .Measurements{
+    margin-top: 15px;
+}
+
+.settings .tabContent h3{
+    margin: 0px;
+}
+
+.settings .tabContent .buttons button{
+    float: left;
+}
+
+.settings .tabContent .buttons button:last-child{
+    float: none;
+}
+
+.settings .tabContent .buttons button.active{
+    background-color:rgb(140, 30, 173);
+}
+
+
+.settings .tabContent .connectionButtons {
+    text-align: end;
+}
+
+.settings .tabContent .connectionButtons .connect{
+    background-color:green;
+    border-radius: 3px;
+    float: right;
+}
+
+.settings .tabContent .connectionButtons .disconnect{
+    background-color:red;
+    border-radius: 3px;
 }
