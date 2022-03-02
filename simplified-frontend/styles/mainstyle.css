@@ -86,7 +86,7 @@ nav ul li a.current{
     background-color:rgb(11, 137, 187);
 }
 
-div{
+nav{
     display:grid; 
 }
 

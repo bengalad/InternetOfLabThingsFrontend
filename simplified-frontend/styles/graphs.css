@@ -4,6 +4,10 @@
     grid-template-columns: 75% 25%;
 }
 
+.graphWrap .configs{
+    display:grid;
+}
+
 /*styling the postion and size of canvas graph is drawn on*/
 div.chartBox canvas{
     margin-left: 100px;
@@ -22,6 +26,7 @@ div.graphWrap .configs .selectStirrer{
     border-style: solid;
     border-width: 2px;
     border-color: #5689A0;
+    display: grid;
 }
 
 div.graphWrap .configs .selectStirrer h2{
@@ -31,7 +36,7 @@ div.graphWrap .configs .selectStirrer h2{
     margin: 0;
     height:fit-content;
     border-bottom: 1px solid;
-    border-color:  #5689A0;;
+    border-color:  #5689A0;
 }
 
 /*styling for the buttons that display stirrer measurements*/
@@ -42,6 +47,7 @@ div.graphWrap .configs .options{
     border-style: solid;
     border-width: 2px;
     border-color: #5689A0;
+    display: grid;
 }
 
 div.graphWrap .configs .options h2{

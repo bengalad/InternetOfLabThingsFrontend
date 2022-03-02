@@ -41,6 +41,7 @@
                 <tr class = "titles">
                     <th>ID</th>
                     <th>Name</th>
+                    <th>Select Stirrer</th>
                     <th>Status</th>
                 </tr>
             </thead>
@@ -48,29 +49,104 @@
             <tbody>
                 <tr class = "entries">
                     <td>08755</td>
-                    <td>Stirer 1</td>
+                    <td>Stirrer 1</td>
+                    <td>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </td>
                     <td>ACTIVE</td>
                 </tr>
                 <tr class = "entries">
                     <td>08765</td>
-                    <td>Stirer 2</td>
+                    <td>Stirrer 2</td>
+                    <td>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </td>
                     <td>DISCONECTED</td>
                 </tr>
                 <tr class = "entries">
                     <td>08355</td>
-                    <td>Stirer 3</td>
+                    <td>Stirrer 3</td>
+                    <td>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </td>
                     <td>DISCONECTED</td>
                 </tr>
                 <tr class = "entries">
                     <td>07355</td>
-                    <td>Stirer 4</td>
+                    <td>Stirrer 4</td>
+                    <td>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </td>
                     <td>ACTIVE</td>
+                </tr>
+                <tr class = "entries">
+                    <td>07655</td>
+                    <td>Stirrer 5</td>
+                    <td>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </td>
+                    <td>DISCONECTED</td>
+                </tr>
+                <tr class = "entries">
+                    <td>07395</td>
+                    <td>Stirrer 6</td>
+                    <td>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </td>
+                    <td>DISCONECTED</td>
                 </tr> 
             </tbody>
-
         </table>
+
     </div>
-    
+    <div class="settings">
+
+        <h2>Stirrer Configurations</h2>
+        <div class = "tab">
+            <button class = "tabBtn">Stirrer 1</button>
+            <button class = "tabBtn">Stirrer 2</button>
+            <button class = "tabBtn">Stirrer 3</button>
+            <button class = "tabBtn">Stirrer 4</button>
+            <button class = "tabBtn">Stirrer 5</button>
+            <button class = "tabBtn">Stirrer 6</button>
+        </div>
+
+        <div class = "tabContent">
+            <!--
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username"><br>
+            -->
+            <label for="time">Time interval: </label>
+            <input type="number" id="time" name="time"><br>
+
+            <div class = "Measurements">
+                <h3>Select characteristics to measure:</h3>
+
+                <div class="buttons">
+                    <button class="btn">Colour</button>
+                    <button class="btn">Transparency</button>
+                    <button class="btn">Conductivity</button>
+                    <button class="btn">Viscosity</button>
+                    <button class="btn">Stirring Rate</button>
+                    <button class="btn">Temperature</button>
+                </div>
+
+            </div>
+
+
+            <div class = "connectionButtons">
+                <button class = "disconnect">Disconnect</button>
+                <button class = "connect">Connect</button>
+            </div>
+
+        </div>
+    </div>
     <!--
     <table>
         <tr>
@@ -84,5 +160,37 @@
     </table>
 -->
     <!--<script src="scripts/main.js"></script>-->
+    <script>
+        //for measuremnet buttons
+        const btns = document.querySelectorAll(".btn");
+
+        btns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+            btn.classList.toggle("active");
+            });
+        });
+        
+        //for the menu tab buttons
+        const tabBtns = document.querySelectorAll(".tabBtn");
+
+        tabBtns.forEach((tabBtn) => {
+            tabBtn.addEventListener("click", () => {
+                
+                removeClasses(tabBtn);
+                
+            });
+        });
+
+        function removeClasses(target) {
+            tabBtns.forEach((tabBtn) => {
+                if(tabBtn == target) { 
+                    tabBtn.classList.add("active"); 
+                }
+                else { 
+                    tabBtn.classList.remove("active"); 
+                }
+            });
+        }
+    </script>
 </body>
 </html>
