@@ -51,16 +51,16 @@
                     <td>08755</td>
                     <td>Stirrer 1</td>
                     <td>
-                        <input type="checkbox">
+                        <input type="checkbox" value = "one" onclick="EnableDisableButton(this,value)">
                         <span class="checkmark"></span>
                     </td>
-                    <td>ACTIVE</td>
+                    <td>DISCONECTED</td>
                 </tr>
                 <tr class = "entries">
                     <td>08765</td>
                     <td>Stirrer 2</td>
                     <td>
-                        <input type="checkbox">
+                        <input type="checkbox" value = "two" onclick="EnableDisableButton(this,value)">
                         <span class="checkmark"></span>
                     </td>
                     <td>DISCONECTED</td>
@@ -69,7 +69,7 @@
                     <td>08355</td>
                     <td>Stirrer 3</td>
                     <td>
-                        <input type="checkbox">
+                        <input type="checkbox" value = "three" onclick="EnableDisableButton(this,value)">
                         <span class="checkmark"></span>
                     </td>
                     <td>DISCONECTED</td>
@@ -78,16 +78,17 @@
                     <td>07355</td>
                     <td>Stirrer 4</td>
                     <td>
-                        <input type="checkbox">
+                        <!--<input type="checkbox" onclick="if(this.checked){displaybutton()}">-->
+                        <input type="checkbox" value = "four" onclick="EnableDisableButton(this,value)">
                         <span class="checkmark"></span>
                     </td>
-                    <td>ACTIVE</td>
+                    <td>DISCONECTED</td>
                 </tr>
                 <tr class = "entries">
                     <td>07655</td>
                     <td>Stirrer 5</td>
                     <td>
-                        <input type="checkbox">
+                        <input type="checkbox" value = "five" onclick="EnableDisableButton(this,value)">
                         <span class="checkmark"></span>
                     </td>
                     <td>DISCONECTED</td>
@@ -96,7 +97,7 @@
                     <td>07395</td>
                     <td>Stirrer 6</td>
                     <td>
-                        <input type="checkbox">
+                        <input type="checkbox" value = "six" onclick="EnableDisableButton(this,value)">
                         <span class="checkmark"></span>
                     </td>
                     <td>DISCONECTED</td>
@@ -109,12 +110,12 @@
 
         <h2>Stirrer Configurations</h2>
         <div class = "tab">
-            <button class = "tabBtn">Stirrer 1</button>
-            <button class = "tabBtn">Stirrer 2</button>
-            <button class = "tabBtn">Stirrer 3</button>
-            <button class = "tabBtn">Stirrer 4</button>
-            <button class = "tabBtn">Stirrer 5</button>
-            <button class = "tabBtn">Stirrer 6</button>
+            <button class = "tabBtn" id="one" disabled>Stirrer 1</button>
+            <button class = "tabBtn" id="two" disabled>Stirrer 2</button>
+            <button class = "tabBtn" id="three" disabled>Stirrer 3</button>
+            <button class = "tabBtn" id="four" disabled>Stirrer 4</button>
+            <button class = "tabBtn" id="five" disabled>Stirrer 5</button>
+            <button class = "tabBtn" id="six" disabled>Stirrer 6</button>
         </div>
 
         <div class = "tabContent">
@@ -142,7 +143,7 @@
 
             <div class = "connectionButtons">
                 <button class = "disconnect">Disconnect</button>
-                <button class = "connect">Connect</button>
+                <button class = "connect" onclick="connect()">Connect</button>
             </div>
 
         </div>
@@ -159,38 +160,6 @@
         </tr>
     </table>
 -->
-    <!--<script src="scripts/main.js"></script>-->
-    <script>
-        //for measuremnet buttons
-        const btns = document.querySelectorAll(".btn");
-
-        btns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-            btn.classList.toggle("active");
-            });
-        });
-        
-        //for the menu tab buttons
-        const tabBtns = document.querySelectorAll(".tabBtn");
-
-        tabBtns.forEach((tabBtn) => {
-            tabBtn.addEventListener("click", () => {
-                
-                removeClasses(tabBtn);
-                
-            });
-        });
-
-        function removeClasses(target) {
-            tabBtns.forEach((tabBtn) => {
-                if(tabBtn == target) { 
-                    tabBtn.classList.add("active"); 
-                }
-                else { 
-                    tabBtn.classList.remove("active"); 
-                }
-            });
-        }
-    </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
