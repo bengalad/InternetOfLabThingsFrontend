@@ -79,6 +79,13 @@ table, th, td{
     background-color:rgb(140, 30, 173);
 }
 
+/*--------------------------------------------------------------
+.settings .tab .one,.settings .tab .four{
+    display: none;
+}
+
+--------------------------------------------------------------*/
+
 .settings .tabContent{
     margin-top: 10px;
 }
