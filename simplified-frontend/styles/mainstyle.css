@@ -1,3 +1,4 @@
+/* style of main body  */
 body {
     margin:0; /*Fills to edges of screen*/
 }
@@ -26,12 +27,13 @@ header h1.header {
     width: 100%;
 }
 
+/* styling of stripe colour on page */
 header h2.header2{
     background-color:purple;
     padding: 2px;
     margin: 0px;
 }
-
+/* style of section that holds username and icon */
 header section{
     position:fixed;
     right: 0;
@@ -39,16 +41,23 @@ header section{
     display:inline-flex;
     vertical-align:top;
 }
-
+/* sizing of icon */
 header .material-icons{
     font-size: 32px;
 }
 
+/* sizing of font */
 header p{
     color:black;
     line-height:2px;
 }
 
+/* setting the display layout of navigation bar */
+nav{
+    display:grid; 
+}
+
+/* styling of navigation bar */
 nav ul{
     list-style-type: none;
     display:block;
@@ -58,18 +67,17 @@ nav ul{
     width: fit-content;
     background-color:#5689A0;
     color: black;
-    /*border: 1px solid #555;*/
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
+    height: 100%; /* Navbar Full height */
+    position: fixed; /* Making it stay in same postion, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
-    z-index: 5;
+    z-index: 5; /* making sure content scrolls behind navbar */
 }
 
 nav ul li{
     text-align: center;
-    /*border-bottom: 1px solid black;*/
 }
 
+/* styling of navbar page titles*/
 nav ul li a{
     display: block;
     color:black;
@@ -77,18 +85,18 @@ nav ul li a{
     text-decoration: none;
 }
 
+/* colour when a page is click */
 nav ul li a.current{
     background-color:rgb(140, 30, 173);
     color:white;
 }
 
+/* colour when hovering over page tab */
  nav ul li a:hover:not(.current){
     background-color:rgb(11, 137, 187);
 }
 
-nav{
-    display:grid; 
-}
+
 
 
 

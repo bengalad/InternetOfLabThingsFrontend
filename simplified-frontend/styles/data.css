@@ -1,28 +1,28 @@
+/* styling of refresh icon */
 .wrapper .column .rowCard .refresh{
     display: block;
     text-align: right;
-   
 }
 
+/* style of title card */
 .wrapper .column .rowCard h3{
     text-align: center;
 }
 
-.wrapper .column .rowCard p,h3{
+.wrapper .column .rowCard p, .wrapper .column .rowCard h3{
     margin: 5px;
 }
 
+/* style of data cards */
 .wrapper{
     display: grid;
     grid-template-columns: repeat(3, 300px);
-    /* repeat(auto-fill,minmax(120px, 1fr)*/
     -ms-grid-row-align: center;
     grid-gap: 0.7em;
     grid-auto-rows: minmax(50px,auto);
     position: relative; 
     transform: translate(140px,60px);
     margin: 0 -5px;
-    /*display: flex;*/
 }
 
 /* Clear floats after the columns */
@@ -62,27 +62,13 @@
     .wrapper { grid-template-columns: repeat(3, 375px); }
  }
 
-  /* Style the counter cards */
+  /* Style the data cards */
 .wrapper .column .rowCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
-
     background-color: #f1f1f1;
     width: 325px;
     border-color: #5689A0;
     border-style:solid;
     border-radius: 10px;
 }
-
-/*
-
-.wrapper div{
-    background-color: grey;
-    padding: 1em;
-}
-
-.wrapper div:nth-child(odd){
-    background-color: gainsboro;
-}
-
-*/

@@ -78,7 +78,6 @@
                     <td>07355</td>
                     <td>Stirrer 4</td>
                     <td>
-                        <!--<input type="checkbox" onclick="if(this.checked){displaybutton()}">-->
                         <input type="checkbox" value = "four" onclick="EnableDisableButton(this,value)">
                         <span class="checkmark"></span>
                     </td>
@@ -119,11 +118,8 @@
         </div>
 
         <div class = "tabContent">
-            <!--
-            <label for="username">Username: </label>
-            <input type="text" id="username" name="username"><br>
-            -->
-            <label for="time">Time interval: </label>
+
+            <label for="time">Data Sampling Interval (Seconds): </label>
             <input type="number" id="time" name="time"><br>
 
             <div class = "Measurements">
@@ -148,18 +144,7 @@
 
         </div>
     </div>
-    <!--
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Stirer 1</td>
-            <td>ACTIVE</td>
-        </tr>
-    </table>
--->
+
     <script src="scripts/main.js"></script>
 </body>
 </html>
