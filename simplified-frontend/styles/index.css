@@ -1,14 +1,5 @@
-/*
-table, th, td{
-    text-align:left;
-    width: 75%;
-    margin-left: 140px;
-    background-color: red;
-    margin-top: 60px; 
-}
-*/
-
-.table1 {
+/*styling of table*/
+.table-wrapper .table1 {
     border-radius: 5px;
     font-size: 12px;
     font-weight: normal;
@@ -21,31 +12,36 @@ table, th, td{
     margin-top: 60px; 
 }
 
-.table1 td, .table1 th {
+/*centring table headings and data*/
+.table-wrapper .table1 thead th, .table-wrapper .table1 tbody td {
     text-align: center;
     padding: 8px;
 }
 
-.table1 td {
-    border-right: 1px solid #f8f8f8;
-    font-size: 12px;
-}
-
-.table1 thead th {
+/*styling the table headers*/
+.table-wrapper .table1 thead th {
     color: #ffffff;
     background: rgb(11, 137, 187);
 }
 
-
-.table1 thead th:nth-child(odd) {
+/*making every odd table heading a different colour*/
+.table-wrapper .table1 thead th:nth-child(odd) {
     color: #ffffff;
     background:rgb(140, 30, 173);
 }
 
+/*seeting font size of table data*/
+.table-wrapper .table1 tbody td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+/*alternating colour of each row*/
 .table1 tr:nth-child(even) {
     background: #F8F8F8;
 }
 
+/*style of stirrer configurations box*/
 .settings{
     margin-left: 140px;
     margin-top: 60px; 
@@ -55,6 +51,8 @@ table, th, td{
     border-radius: 5px;
     width: 75%;
 }
+
+/*Styling border around title "stirrer configurations"*/
 .settings h2{
     border-bottom:solid;
     border-bottom-color:rgb(11, 137, 187);
@@ -62,65 +60,68 @@ table, th, td{
     margin: 0px;
 }
 
+/*style of menu tab*/
 .settings .tab{
     display:inline-block;
     border-style: solid;
     border-radius: 2px;
     border-width: 1px;
     border-color:rgb(11, 137, 187);
-    
 }
+
+/*setting display layout type of menu buttons*/
 .settings .tab button{
     display:block;
     float:left;
 }
 
+/*state of menu buttons when clicked*/
 .settings .tab button.active{
     background-color:rgb(140, 30, 173);
 }
 
-/*--------------------------------------------------------------
-.settings .tab .one,.settings .tab .four{
-    display: none;
-}
-
---------------------------------------------------------------*/
-
+/*styling main section that holds config. options*/
 .settings .tabContent{
     margin-top: 10px;
 }
 
-.settings .tabContent .Measurements{
-    margin-top: 15px;
-}
-
+/*style of title for sensor option buttons*/
 .settings .tabContent h3{
     margin: 0px;
 }
 
+/*style of the buttons for different sensor options*/
+.settings .tabContent .Measurements{
+    margin-top: 15px;
+}
+
+/*alligning all sensor option buttons to the left*/
 .settings .tabContent .buttons button{
     float: left;
 }
-
+/*remove for last button*/
 .settings .tabContent .buttons button:last-child{
     float: none;
 }
 
+/*the colour of the button when pressed*/
 .settings .tabContent .buttons button.active{
     background-color:rgb(140, 30, 173);
 }
 
-
+/*allignment of connect/disconnect buttons*/
 .settings .tabContent .connectionButtons {
     text-align: end;
 }
 
+/*styling connect button*/
 .settings .tabContent .connectionButtons .connect{
     background-color:green;
     border-radius: 3px;
     float: right;
 }
 
+/*styling disconnect button*/
 .settings .tabContent .connectionButtons .disconnect{
     background-color:red;
     border-radius: 3px;
