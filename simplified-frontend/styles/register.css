@@ -47,8 +47,8 @@ form .border{
     display:block;
 }
 
-/*styling of icons for usernamae and password*/
-form .infocontainer .username i, form .infocontainer .password i{
+/*styling of icons for name, usernamae and password*/
+form .infocontainer .fullname i, form .infocontainer .username i, form .infocontainer .password i{
     color: white;
     float: left;
     margin-top: 3%;
@@ -56,8 +56,8 @@ form .infocontainer .username i, form .infocontainer .password i{
     border: 2px solid white;
 }
 
-/*styling of username and passwprd labels*/
-form .infocontainer .username label, form .infocontainer .password label{
+/*styling of nam, username and passwprd labels*/
+form .infocontainer .fullname label, form .infocontainer .username label, form .infocontainer .password label{
     color: white;
     float:left;
     margin-right:15px;
@@ -75,7 +75,7 @@ form .infocontainer input[type=text], form .infocontainer input[type=password] {
     border: 1px solid #ccc;
   }
 
-  /*styling login button*/
+  /*styling register button*/
 form .infocontainer button{
     background-color: purple;
     color: white;
@@ -86,7 +86,7 @@ form .infocontainer button{
     width: 25%;
 }
 
-/*centring login button*/
+/*centring register button*/
 form .infocontainer{
     text-align: center;
 }
