@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/register.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <meta charset="UTF-8">
@@ -23,6 +23,12 @@
         <div class="border"></div>
 
         <div class="infocontainer">
+            <div class = "fullname">
+                <i class="material-icons">person</i>
+                <label for="fullname"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Name" name="fullname" required>
+            </div>
+
             <div class = "username">
                 <i class="material-icons">email</i>
                 <label for="uname"><b>Username</b></label>
@@ -35,11 +41,11 @@
                 <input type="password" placeholder="Enter Password" name="psw" required>
             </div>
       
-            <button type="submit">Login</button>
+            <button type="submit">Register Account</button>
         </div>
       
         <div class="container">
-          <span class="register">Don't have an account? <a href="register.html">Sign up!</a></span>
+          <span class="register">Already have an account? <a href="login.html">Login in!</a></span>
         </div>
     </form>
     
