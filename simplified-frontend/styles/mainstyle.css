@@ -96,8 +96,14 @@ nav ul li a.current{
     background-color:rgb(11, 137, 187);
 }
 
+nav ul .logout{
+    border-top: solid 2px red;
+    position: absolute;
+    bottom: 5.5%;
+    width: 100%;
+}
 
-
-
-
+nav ul .logout a{
+    color:red;
+}
 
