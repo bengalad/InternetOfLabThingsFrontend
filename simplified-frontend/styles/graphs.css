@@ -39,6 +39,12 @@ div.graphWrap .configs .selectStirrer h2{
     border-color:  #5689A0;
 }
 
+/*state of select stirrer buttons when clicked*/
+.graphWrap .configs .selectStirrer button.active{
+    background-color:rgb(140, 30, 173);
+}
+
+
 /*styling for the buttons that display stirrer measurements*/
 div.graphWrap .configs .options{
     width: fit-content;
@@ -58,4 +64,9 @@ div.graphWrap .configs .options h2{
     height:fit-content;
     border-bottom: 1px solid;
     border-color:  #5689A0;;
+}
+
+/*state of select stirrer buttons when clicked*/
+.graphWrap .configs .options button.active{
+    background-color:rgb(140, 30, 173);
 }
