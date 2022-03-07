@@ -99,7 +99,7 @@ nav ul li a.current{
 nav ul .logout{
     border-top: solid 2px red;
     position: absolute;
-    bottom: 5.5%;
+    bottom: 6.5%;
     width: 100%;
 }
 
