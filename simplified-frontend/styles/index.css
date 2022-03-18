@@ -60,23 +60,25 @@
     margin: 0px;
 }
 
-/*style of menu tab*/
-.settings .tab{
-    display:inline-block;
-    border-style: solid;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color:rgb(11, 137, 187);
+
+
+
+/*style of title for sensor option buttons*/
+.settings h3{
+    margin: 0px;
 }
 
-/*setting display layout type of menu buttons*/
-.settings .tab button{
-    display:block;
-    float:left;
+/*alligning all sensor option buttons to the left*/
+.settings .buttons button{
+    float: left;
+}
+/*remove for last button*/
+.settings .buttons button:last-child{
+    float: none;
 }
 
-/*state of menu buttons when clicked*/
-.settings .tab button.active{
+/*the colour of the button when pressed*/
+.settings .buttons button.active{
     background-color:rgb(140, 30, 173);
 }
 
@@ -85,27 +87,28 @@
     margin-top: 10px;
 }
 
-/*style of title for sensor option buttons*/
-.settings .tabContent h3{
-    margin: 0px;
-}
-
-/*style of the buttons for different sensor options*/
-.settings .tabContent .Measurements{
+/*style of the buttons for different stirrer options*/
+.settings .tabContent .stirrerMenu{
     margin-top: 15px;
 }
 
-/*alligning all sensor option buttons to the left*/
-.settings .tabContent .buttons button{
-    float: left;
-}
-/*remove for last button*/
-.settings .tabContent .buttons button:last-child{
-    float: none;
+/*style of stirrer menu tab*/
+.settings .tab{
+    display:inline-block;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color:rgb(11, 137, 187);
 }
 
-/*the colour of the button when pressed*/
-.settings .tabContent .buttons button.active{
+/*setting display layout type of stirrer menu buttons*/
+.settings .tab button{
+    display:block;
+    float:left;
+}
+
+/*state of stirrer menu buttons when clicked*/
+.settings .tab button.active{
     background-color:rgb(140, 30, 173);
 }
 
